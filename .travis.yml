@@ -1,19 +1,25 @@
 language: php
 
 php:
-- 7.0
-- 7.1
-
-services:
-- mysql
+  - 7.0
+  - 7.1
 
 before_script:
-- cp .env.travis .env
-- mysql -e 'create database testing;'
-- composer self-update
-- composer install --no-interaction
-- php artisan key:generate
-- php artisan migrate --seed
+  - cp .env.travis .env
+  - composer self-update
+  - composer install --prefer-source --no-interaction --dev
+  - php artisan key:generate
+  - php artisan jwt:generate
+  - php artisan migrate
+
+before_install:
+  - mysql -e 'CREATE DATABASE realworld_test;'
 
 script:
-    - vendor/bin/phpunit --coverage-text
+  - phpunit
+
+services:
+  - mysql
+
+notifications:
+email: false

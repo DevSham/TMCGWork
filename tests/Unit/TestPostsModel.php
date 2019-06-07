@@ -19,7 +19,9 @@ class TestPostsModel extends TestCase
     {
        // $this->assertTrue(true);
        //create user
-       $user=Posts::create(['id'=>'1','fname'=>'shamim', 'sname'=>'Nakayiza', 'sex'=>'female','amount'=>'10000']);
-       $this->assertEquals('Na', $user->sname);
+       $user=Posts::create([
+           'id'=>'1',
+           'fname'=>'shamim', 'sname'=>'Nakayiza', 'sex'=>'female','amount'=>10000]);
+       $this->assertEquals('Nakayiza', $user->sname);
     }
 }

@@ -47,10 +47,6 @@ class TasksTest extends TestCase
       $res = $this->get('/posts');
       $res->assertSee($task->fname);
       $res->assertSee('Nakayiza', $task->sname);
-
-
-
     }
-
 
 }

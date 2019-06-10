@@ -16,6 +16,7 @@
         <li><a href="{{route('posts.index')}}">Clients</a></li>
     </ul>
 </div>
+<h2>TMCG BANK</h2>
     <div class="container">
         @yield('content')
 

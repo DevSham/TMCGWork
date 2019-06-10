@@ -16,3 +16,5 @@ artisan
 composer.json
 composer.lock
 package.json
+input.txt
+travis.log

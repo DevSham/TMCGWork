@@ -1,8 +1,9 @@
 @extends('postsPages.layout')
 @section('content')
-<h1>Show specific user</h1>
+<h1>Welcome Page</h1>
 
-<p>hi {{$specific->fname}} welcome to this page</p>
+<p>hi {{$specific->fname}} thanks for banking with us.</p>
+<p>You have deposited shs{{$specific->amount}}</p>
 
 
 

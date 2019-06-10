@@ -16,4 +16,7 @@ script:
 deploy:
   provider: heroku
   api_key:
-    secure: "YOUR ENCRYPTED API KEY"
+    secure: "7eafc834-38c5-4e43-bc66-57def5daaebc"
+  app: "laravelappfinal"
+  on:
+    all_branches: true

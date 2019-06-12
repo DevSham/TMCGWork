@@ -7,7 +7,7 @@
     <title>Document</title>
     <link href= "https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
     <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.8.10/themes/smoothness/jquery-ui.css" type="text/css"> -->
-    <link rel="stylesheet" href="{{url('css/style.css')}}"/>
+    <link rel="stylesheet" href="{{secure_asset('css/style.css')}}"/>
     <meta name="_token" content="{!!csrf_token() !!}"/>
 </head>
 <body>
